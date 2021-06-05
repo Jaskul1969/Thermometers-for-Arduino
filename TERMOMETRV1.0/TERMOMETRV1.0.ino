@@ -14,6 +14,6 @@ void loop() {
   Serial.print("%RH|");  
   int temperatura = dht.getTemperature();//in polish temperatura is tmemperature
   Serial.print(temperatura);//Like in humidity this show temperature
-  Serial.println("*C");
+  Serial.println("*C");//There is ln on the end of print because this is end of the message for serial port
  delay(1000);
 }
